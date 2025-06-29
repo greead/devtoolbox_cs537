@@ -1,0 +1,28 @@
+{
+    "type": "module",
+    "name": "hw5-back-end-greead04",
+    "version": "1.0.0",
+    "description": "[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/37pYK9qH)\r <section>\r     <h1>HW5 - Back-End</h1>\r     <h3>Points: 20</h3>\r     <br>\r     <img style=\"float:left\" src=\"https://www.bairesdev.com/wp-content/uploads/2021/07/Expressjs.svg\" alt=\"NodeJS Express Logo\"\r         width=\"200\">\r     <img style=\"float:right\" src=\"https://miro.medium.com/v2/resize:fit:1080/1*82q9fbZA3OHhyoQ48qOypQ.png\" alt=\"REST API Logo\"\r         width=\"200\">\r     <img src=\"https://img.icons8.com/cotton/512/cloud-database.png\" alt=\"Database Icon\" width=\"100\">\r     <h3>Course Learning Outcomes</h3>\r     <ol style=\"margin: 0;\">\r         <li>Utilize the basic characteristics and components of web browsers and servers</li>\r         <li>Design and construct web pages using HTML, CSS, and JavaScript</li>\r     </ol>\r     <ol start=\"4\" style=\"margin:0\">\r         <li>Implement server-side application logic using a back-end framework</li>\r     </ol>\r     <ol start=\"6\" style=\"margin:0\">\r         <li>Integrate multiple web technologies into a single application to support front-end, backend, and database development</li>\r         <li>Read and apply web standards</li>\r     </ol>\r </section>",
+    "main": "app.mjs",
+    "scripts": {
+        "start": "nodemon app.mjs",
+        "build-start": "cd frontend && npm run build && cd .. && nodemon app.mjs",
+        "test": "mocha && cypress run"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.21.1",
+        "express-fileupload": "^1.5.1",
+        "sqlite3": "^5.1.7"
+    },
+    "devDependencies": {
+        "chai": "^5.1.2",
+        "chai-http": "^5.1.1",
+        "cypress": "^13.16.0",
+        "mocha": "^10.8.2",
+        "nodemon": "^3.1.7"
+    }
+}

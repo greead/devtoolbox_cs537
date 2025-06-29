@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter";
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid black;
+  font-family: "Kanit";
+  align-items: center;
+}
+header img {
+  width: 7vw;
+  height: 7vw;
+  padding-right: 10px;
+}
+
+.site-nav-wrap {
+  position: relative;
+  width: 6vw;
+}
+
+.site-nav {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  background-color: #d7dce0;
+  font-weight: bold;
+  height: 100%;
+}
+.site-nav img {
+  width: 5vw;
+}
+.site-nav a {
+  padding: 5px 5px 10px 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-content: center;
+  width: 4vw;
+  border: 2px solid transparent;
+  transition: width 0.75s;
+  text-decoration: none;
+}
+.site-nav a img {
+  width: 3vw;
+  height: 3vw;
+  margin: 0px 5px 0px 5px;
+}
+.site-nav a .nav-text {
+  width: 0;
+  overflow: hidden;
+  text-wrap: nowrap;
+  align-self: center;
+  transition: width 0.75s;
+  color: black;
+}
+
+.site-nav:hover {
+  z-index: 10;
+}
+.site-nav:hover a {
+  width: 15vw;
+  transition: width 0.5s;
+}
+.site-nav:hover a .nav-text {
+  width: 100%;
+  transition: width 0.5s;
+}
+.site-nav:hover a:hover {
+  background-color: mediumaquamarine;
+  border: 2px solid black;
+}
+
+.nav-main {
+  display: flex;
+  flex-direction: row;
+}
+.nav-main main {
+  min-height: 85vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1vw;
+}
+.nav-main main h2 {
+  align-self: center;
+}
+.nav-main main h3 {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.intro-nav {
+  display: flex;
+  flex-direction: row;
+}
+.intro-nav p {
+  margin-right: 10px;
+}
+.intro-nav .page-nav {
+  margin-left: auto;
+  background-color: #d7dce0;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: 1px solid black;
+  padding: 10px;
+  padding-right: 20px;
+  min-width: 30vw;
+  text-wrap: nowrap;
+}
+.intro-nav .page-nav li {
+  list-style-type: square;
+  text-wrap: wrap;
+}
+.intro-nav .page-nav a {
+  text-decoration: none;
+  color: black;
+}
+.intro-nav .page-nav a:hover {
+  color: mediumaquamarine;
+  font-weight: bold;
+}
+
+a[href="#top"] {
+  text-decoration: none;
+}
+
+object[type="application/pdf"] {
+  height: 60vh;
+}
+
+footer {
+  border-top: 2px solid black;
+}/*# sourceMappingURL=global.css.map */

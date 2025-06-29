@@ -1,0 +1,51 @@
+// Color Variables
+$buttonColor: #66cdab60;
+
+@keyframes flashing {
+    25%, 75% {
+        background-color: $buttonColor;
+    }
+
+    50% {
+        background-color: white;
+    }
+}
+
+form {
+    width: 50vw;
+    align-self: center;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+
+    input, textarea, select, button {
+        width: 97%
+    }
+
+    .submit {
+        height: 2em;
+    }
+
+    &:valid, &:in-range {
+        .submit {
+            background-color: $buttonColor;
+            font: 1em sans-serif;
+            font-weight: bold;
+            height: 4em;            
+            animation: flashing 0.5s 5;
+            transition: height 1.5s, background-color 2s;
+        }
+    }
+
+}
+
+table {
+    width: 100%;
+}
+
+
+table td {
+    text-align: center;
+}
+
+

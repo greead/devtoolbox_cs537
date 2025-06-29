@@ -1,0 +1,179 @@
+// Color Variables
+$bgColor: #d7dce0;
+$hovColor: mediumaquamarine;
+$bordColor: black;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter';
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid $bordColor;
+    font-family: "Kanit";
+    align-items: center;
+
+    img {
+        width: 7vw;
+        height: 7vw;
+        padding-right: 10px;
+    }
+
+}
+
+.site-nav-wrap {
+    position: relative;
+    width: 6vw;
+}
+
+.site-nav {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    background-color: $bgColor;
+    font-weight: bold;
+    height: 100%;
+
+    img {
+        width: 5vw
+    }
+    
+
+    a {
+        padding: 5px 5px 10px 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-content: center;
+        width: 4vw;
+        border: 2px solid transparent;
+        transition: width 0.75s;
+        text-decoration: none;
+
+        img {
+            width: 3vw;
+            height: 3vw;
+            margin: 0px 5px 0px 5px;
+        }
+
+        .nav-text {
+            width: 0;
+            overflow: hidden;
+            text-wrap: nowrap;
+            align-self: center;
+            transition: width 0.75s;
+            color: black;
+        }
+        
+    
+
+    }
+    
+}
+
+.site-nav:hover {
+    z-index: 10;
+
+    a {
+        .nav-text {
+            width: 100%;
+            transition: width 0.5s;
+        }
+
+        width: 15vw;        
+        transition: width 0.5s;
+        
+    }
+
+    a:hover {
+        background-color: $hovColor;
+        border: 2px solid $bordColor;
+    }
+
+}
+
+.nav-main {
+    display: flex;
+    flex-direction: row;
+
+    main {
+        min-height: 85vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 1vw;
+
+    
+        h2 {
+            align-self: center;
+        }   
+
+        h3 {
+            width: 100%;
+            border-bottom: 1px solid black;
+        }
+    
+    }
+}
+
+.intro-nav {
+    display: flex;
+    flex-direction: row;
+    // height: 100%;
+
+    p {
+        margin-right: 10px;
+    }
+
+    .page-nav {
+        margin-left: auto;
+        background-color: $bgColor;
+        height: fit-content;
+        border: 1px solid $bordColor;
+        padding: 10px;
+        padding-right: 20px;
+        min-width: 30vw;
+        text-wrap: nowrap;
+
+        li {
+            list-style-type: square;
+            text-wrap: wrap;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+
+
+        a:hover {
+            color: $hovColor;
+            font-weight: bold;
+        }
+        
+    }
+}
+
+a[href='#top'] {
+    text-decoration: none;
+}
+
+object[type="application/pdf"] {
+    height: 60vh;
+}
+
+
+footer {
+    border-top: 2px solid $bordColor;
+}
